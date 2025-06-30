@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 262 30% 95%;
+    --secondary-foreground: 262 83% 20%;
+
+    --muted: 262 30% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 262 30% 96%;
+    --accent-foreground: 262 83% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 262 20% 91%;
+    --input: 262 20% 91%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 262 30% 95%;
+    --sidebar-accent-foreground: 262 83% 20%;
+    --sidebar-border: 262 20% 91%;
+    --sidebar-ring: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 262 83% 4%;
+    --foreground: 262 30% 98%;
+
+    --card: 262 83% 4%;
+    --card-foreground: 262 30% 98%;
+
+    --popover: 262 83% 4%;
+    --popover-foreground: 262 30% 98%;
+
+    --primary: 262 83% 78%;
+    --primary-foreground: 262 83% 8%;
+
+    --secondary: 262 30% 17%;
+    --secondary-foreground: 262 30% 98%;
+
+    --muted: 262 30% 17%;
+    --muted-foreground: 262 20% 65%;
+
+    --accent: 262 30% 17%;
+    --accent-foreground: 262 30% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 262 30% 17%;
+    --input: 262 30% 17%;
+    --ring: 262 83% 78%;
+    --sidebar-background: 262 83% 8%;
+    --sidebar-foreground: 262 30% 95%;
+    --sidebar-primary: 262 83% 78%;
+    --sidebar-primary-foreground: 262 83% 8%;
+    --sidebar-accent: 262 30% 15%;
+    --sidebar-accent-foreground: 262 30% 95%;
+    --sidebar-border: 262 30% 15%;
+    --sidebar-ring: 262 83% 78%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Custom Durban July 2025 theme styles */
+@layer components {
+  .durban-gradient {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #9333ea 100%);
+  }
+
+  .horse-card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .purple-glow {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+}
